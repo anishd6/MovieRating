@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.999977929685" prefWidth="226.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.RegisterUserController">
+  <children>
+    <GridPane layoutX="0.0" layoutY="4.0" prefHeight="426.0000999999975" prefWidth="226.0">
+      <children>
+        <Label text="Username" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <TextField fx:id="usernameField" prefWidth="215.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <GridPane.margin>
+            <Insets left="15.0" right="15.0" fx:id="x1" />
+          </GridPane.margin>
+        </TextField>
+        <Label text="Password" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+        <PasswordField fx:id="passwordField" prefWidth="200.0" promptText="" text="" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="4" />
+        <Label text="Confirm Password" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+        <PasswordField id="confirmPassword" fx:id="confirm_passwordField" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="6" />
+        <Label text="Email Address" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+        <TextField fx:id="emailField" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="8" />
+        <Label text="Security Question" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+        <ComboBox fx:id="comboBox" prefWidth="200.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.margin="$x1" GridPane.rowIndex="10">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Label text="Security Answer" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+        <TextField fx:id="answerField" prefWidth="200.0" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="12" />
+        <Button fx:id="registerButton" mnemonicParsing="false" onMouseClicked="#registerClicked" text="Register" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="14" />
+        <Label fx:id="messageLabel" text="" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

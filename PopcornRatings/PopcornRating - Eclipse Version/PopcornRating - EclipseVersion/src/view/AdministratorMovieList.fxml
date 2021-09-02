@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.AdministratorMoviListController">
+  <children>
+    <TableView fx:id="table_movie" layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="572.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Year" fx:id="col_year" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="231.0" text="Title" fx:id="col_title" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="129.0" text="Director" fx:id="col_director" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" text="Starring" fx:id="col_starring" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
